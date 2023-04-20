@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/recycling plant.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/tutorial.unity
+    guid: 1cb7637509c237f4da1ed6fe4ec09e61
+  - enabled: 1
+    path: Assets/Scenes/bosses room.unity
+    guid: e837876caba4cd244aef5f67d118c1dc
+  - enabled: 1
+    path: Assets/Scenes/death.unity
+    guid: 22808b49cb3ebd64db9e1f4d747ef154
+  - enabled: 1
+    path: Assets/Scenes/rc2.unity
+    guid: a8e9ef0e861ca5e4a8e42b0fcd3b21dc
+  - enabled: 1
+    path: Assets/Scenes/MIKE.unity
+    guid: eb76c32aeb5fb6e459fa7534874a30f6
+  - enabled: 1
+    path: Assets/Scenes/conv2.unity
+    guid: ba43f57b376e129409fc2c96715c5952
+  - enabled: 1
+    path: Assets/Scenes/LD1.unity
+    guid: d2963b22deedd93408a304ec09c3156e
+  - enabled: 1
+    path: Assets/Scenes/CONVF.unity
+    guid: 19416cefac4bdaa4d99b00ae2a60b571
+  m_configObjects: {}
