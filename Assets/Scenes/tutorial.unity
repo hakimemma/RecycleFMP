@@ -2240,7 +2240,6 @@ GameObject:
   - component: {fileID: 881684615}
   - component: {fileID: 881684614}
   - component: {fileID: 881684613}
-  - component: {fileID: 881684617}
   m_Layer: 0
   m_Name: BRINGER (3)
   m_TagString: Untagged
@@ -2324,25 +2323,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &881684617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 881684612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7646f5f9a103c314986450287aaeaddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectsToSpawn:
-  - {fileID: 4302359396192108645, guid: fb142e523c44a704fb5c3aeb22a54edc, type: 3}
-  - {fileID: 5607510251991513666, guid: e8497f126bc091d44b2be8c8e54f08d2, type: 3}
-  - {fileID: 5354650463504598266, guid: e362d643ff7103746a1621d9c9a6df48, type: 3}
-  - {fileID: 5570381342684545073, guid: e69f45e007151614d92a2daf6623ea2a, type: 3}
-  minSpawnTime: 0.5
-  maxSpawnTime: 2.5
 --- !u!1 &909939285
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,7 +2469,6 @@ GameObject:
   - component: {fileID: 958761535}
   - component: {fileID: 958761534}
   - component: {fileID: 958761533}
-  - component: {fileID: 958761537}
   m_Layer: 0
   m_Name: BRINGER (2)
   m_TagString: Untagged
@@ -2573,25 +2552,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &958761537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958761532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7646f5f9a103c314986450287aaeaddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectsToSpawn:
-  - {fileID: 5354650463504598266, guid: e362d643ff7103746a1621d9c9a6df48, type: 3}
-  - {fileID: 5607510251991513666, guid: e8497f126bc091d44b2be8c8e54f08d2, type: 3}
-  - {fileID: 4302359396192108645, guid: fb142e523c44a704fb5c3aeb22a54edc, type: 3}
-  - {fileID: 5570381342684545073, guid: e69f45e007151614d92a2daf6623ea2a, type: 3}
-  minSpawnTime: 1
-  maxSpawnTime: 3
 --- !u!1 &969024584
 GameObject:
   m_ObjectHideFlags: 0
@@ -3088,7 +3048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed2749c695e52b24d87f60ec279e3b54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiredItems: 20
+  requiredItems: 10
   counterProgess: {fileID: 835740467}
   unwantedItems: 0
   nextLevel: 8
