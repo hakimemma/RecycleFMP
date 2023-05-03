@@ -5392,12 +5392,9 @@ MonoBehaviour:
   - '"Hi my name is mike. You must be the new kid that the boss was talking about".'
   - you "Yh i am the new employee and i aint no kid. Anyways what was the boss saying
     about me."
-  - Mike "Yeesh someone is sensetive. He said you were fast with sorting out the
-    rubbish on your first shift"
-  - 'Mike "Since you were fast in your first shift, can you clear the glass rubbish
+  - 'Mike "Since you were fast in your first shift, can you clear the metal rubbish
     from the large pile of litter. The world doesnt know how to control there litter
     which makes me wanna quit." '
-  - Mike " GO AHEAD AND DO IT I AINT GOT ALL DAY LONG!!!!"
   textSpeed: 0
   isRunning: 0
 --- !u!1 &1531559936
