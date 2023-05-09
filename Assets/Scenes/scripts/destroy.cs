@@ -14,7 +14,7 @@ public class destroy : MonoBehaviour
     {
         if(other.tag=="Player")
         {
-            Destroy(cube,7f);
+            Destroy(cube,5f);
             Destroy(gameObject);
         }
     }

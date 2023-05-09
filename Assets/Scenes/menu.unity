@@ -910,10 +910,10 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Recyclemania
 
-    there is a litter crisis because there is common error
-    most humans do. which is putting rubbish where is not meant to be, this means
-    the garbage men have to do more work due to the amount of litter that is put
-    in the wrong place . so help us make change and  '
+    there is a litter crisis due to this common error most
+    humans do. which is putting rubbish where is not meant to be, this means the
+    garbage men have to do more work due to the amount of litter that is put in the
+    wrong place . so help us make change and  '
 --- !u!222 &2103428492
 CanvasRenderer:
   m_ObjectHideFlags: 0
