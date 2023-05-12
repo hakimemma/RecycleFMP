@@ -1323,7 +1323,7 @@ MonoBehaviour:
   requiredItems: 25
   counterProgess: {fileID: 1460074272}
   unwantedItems: 0
-  nextLevel: 8
+  nextLevel: 11
   counterText: 
 --- !u!65 &353438384
 BoxCollider:
