@@ -885,13 +885,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2080681330}
   lines:
-  - Mike "Thats what the boss was tallking about. Your very fast with doing shifts.
-    One day i will ask you to assist my shifts.KID."
   - YOU " Its hard but simple working as a garbage man but it irratates me how society
     cant control litter. I never realised how bad putting recycling in the wrong
-    bin was. Lastly dont call me kid otherwise i wont assist you."
-  - Mike " Oh sorry i didnt mean to offend you. Please may you assist me when i ask."
-  - YOU" oh look whos so kind now. Yh i will help you since i forgive you"
+    bin was. "
+  - YOU"  Yh i will help you whenever"
   textSpeed: 0
 --- !u!1 &1953788192
 GameObject:
