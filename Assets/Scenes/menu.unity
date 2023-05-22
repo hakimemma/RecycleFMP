@@ -435,7 +435,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Apply now
+  m_Text: Apply now!
 --- !u!222 &1515786849
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -763,7 +763,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -36, y: 289}
+  m_AnchoredPosition: {x: -64, y: 289}
   m_SizeDelta: {x: 1940.0854, y: 408.8396}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1746863444
@@ -799,7 +799,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: from Recylemania@hotmail.com
+  m_Text: from Recyclemania@mail.com
 --- !u!222 &1746863445
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -908,12 +908,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Recyclemania
+  m_Text: 'Dear worker,
 
-    there is a litter crisis due to this common error most
-    humans do. which is putting rubbish where is not meant to be, this means the
+    There is a litter crisis due to this common error most
+    humans do, which is putting rubbish where it''s not meant to be, this means the
     garbage men have to do more work due to the amount of litter that is put in the
-    wrong place . so help us make change and  '
+    wrong place. So help us make change and  '
 --- !u!222 &2103428492
 CanvasRenderer:
   m_ObjectHideFlags: 0

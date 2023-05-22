@@ -326,15 +326,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'BOSS
-
-    I NOW PREMOTE Y
-
-    OU TO BE CO-MANAGER. YOU''VE PASSED THE
-    TEST.
-
-
-'
+  m_Text: "\nBOSS - \n\" I NOW PROMOTE YOU TO BE CO-MANAGER. YOU'VE PASSED THE TEST!
+    \"\n\n"
 --- !u!222 &866987408
 CanvasRenderer:
   m_ObjectHideFlags: 0
