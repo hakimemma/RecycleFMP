@@ -2,44 +2,29 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    public Transform target; // Player's transform
-    public float moveSpeed = 3f; // Movement speed of the enemy
-    public float attackRange = 1.5f; // Distance at which the enemy can attack
-    public float attackRate = 1f; // Rate of attack (attacks per second)
-    private float nextAttackTime = 0f; // Time until the enemy can attack again
+    public float moveSpeed = 3f;
+    public float detectionRange = 10f;
+    public Transform player;
 
-    private void Update()
+    Rigidbody rb;
+    Vector3 moveDirection;
+
+    void Start()
     {
-        if (target == null)
-        {
-            // If there is no target, do nothing
-            return;
-        }
-
-        // Move towards the player
-        Vector3 direction = target.position - transform.position;
-        direction.y = 0f; // Keep the enemy grounded
-        direction.Normalize(); // Normalize the direction vector to avoid faster movement diagonally
-        transform.Translate(direction * moveSpeed * Time.deltaTime);
-
-        // Check if the enemy is in attack range
-        if (Vector3.Distance(transform.position, target.position) <= attackRange)
-        {
-            // Check if it's time to attack
-            if (Time.time >= nextAttackTime)
-            {
-                // Attack the player
-                Attack();
-                // Set the next attack time
-                nextAttackTime = Time.time + 1f / attackRate;
-            }
-        }
+        rb = GetComponent<Rigidbody>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
-    void Attack()
+    void Update()
     {
-        // Placeholder attack behavior
-        Debug.Log("Enemy attacks!");
+        // Check if player is within detection range
+        if (Vector3.Distance(transform.position, player.position) < detectionRange)
+        {
+            // Calculate direction towards player
+            moveDirection = (player.position - transform.position).normalized;
+
+            // Move enemy towards player
+            rb.MovePosition(transform.position + moveDirection * moveSpeed * Time.deltaTime);
+        }
     }
 }
-

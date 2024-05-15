@@ -4,20 +4,17 @@ using UnityEngine;
 
 public class playermovement : MonoBehaviour
 {
-     //public CharacterController controller;
-
     public Rigidbody rb;
 
-
-    public float speed = 12f;
-
+    public float walkSpeed = 12f;
+    public float sprintSpeed = 18f; // Speed when sprinting
+    public float mouseSensitivity = 100f;
     public Transform groundCheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
-    
+
     bool isGrounded;
     public bool playerMovement = true;
-    public float mouseSensitivity = 100f;
     Animator myAnim;
     float xRotation = 0f;
 
@@ -27,14 +24,12 @@ public class playermovement : MonoBehaviour
         myAnim = GetComponentInChildren<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (playerMovement)
         {
             float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
             xRotation += mouseX;
-
             transform.rotation = Quaternion.Euler(0f, xRotation, 0f);
 
             isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
@@ -44,26 +39,17 @@ public class playermovement : MonoBehaviour
 
             Vector3 move = transform.right * x + transform.forward * z;
 
+            float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? sprintSpeed : walkSpeed; // Determine current speed
 
-            rb.velocity = (new Vector3(move.x * speed, rb.velocity.y, move.z * speed));
+            rb.velocity = new Vector3(move.x * currentSpeed, rb.velocity.y, move.z * currentSpeed);
 
             myAnim.SetBool("OnGround", isGrounded);
             myAnim.SetFloat("speed", rb.velocity.magnitude);
-
-        } else
+        }
+        else
         {
             rb.velocity = Vector3.zero;
-
         }
-        
     }
-
-    //public void Teleport(Vector3 position, Quaternion rotation)
-    //{
-    //    transform.position = position;
-    //    Physics.SyncTransforms();
-    //    look.x = rotation.eulerAngles.y;
-    //    look.y = rotation.eulerAngles.z;
-    //    velocity = Vector3.zero;
-    //}
 }
+
