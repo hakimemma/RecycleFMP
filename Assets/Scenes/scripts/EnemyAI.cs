@@ -26,5 +26,9 @@ public class EnemyAI : MonoBehaviour
             // Move enemy towards player
             rb.MovePosition(transform.position + moveDirection * moveSpeed * Time.deltaTime);
         }
+        else
+        {
+            Debug.Log("Player not detected.");
+        }
     }
 }
