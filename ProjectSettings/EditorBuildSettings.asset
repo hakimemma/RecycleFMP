@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/death.unity
     guid: 22808b49cb3ebd64db9e1f4d747ef154
   - enabled: 1
-    path: Assets/Scenes/rc2.unity
+    path: Assets/Scenes/super.unity
     guid: a8e9ef0e861ca5e4a8e42b0fcd3b21dc
   - enabled: 1
     path: Assets/Scenes/MIKE.unity
