@@ -7,7 +7,7 @@ public class idk : MonoBehaviour
     // Start is called before the first frame update
    public void retry()
     {
-        SceneManager.LoadScene("conv2");
+        SceneManager.LoadScene("bosses room");
     }
 
 }

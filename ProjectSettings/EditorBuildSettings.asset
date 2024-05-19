@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/super.unity
     guid: a8e9ef0e861ca5e4a8e42b0fcd3b21dc
   - enabled: 1
-    path: Assets/Scenes/MIKE.unity
+    path: Assets/Scenes/to super.unity
     guid: eb76c32aeb5fb6e459fa7534874a30f6
   - enabled: 1
     path: Assets/Scenes/conv2.unity

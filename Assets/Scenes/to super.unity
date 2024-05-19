@@ -532,7 +532,7 @@ RectTransform:
   m_GameObject: {fileID: 1151762969}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 40.842693, y: 11.396477, z: 11.396477}
+  m_LocalScale: {x: 23.54639, y: 6.5702305, z: 6.5702305}
   m_Children:
   - {fileID: 1466856677}
   m_Father: {fileID: 261768354}
@@ -540,7 +540,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -910, y: -8}
+  m_AnchoredPosition: {x: -514.38, y: -8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1151762971
@@ -609,7 +609,7 @@ RectTransform:
   m_GameObject: {fileID: 1317646456}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10.4022875, y: 3.995041, z: 3.995041}
+  m_LocalScale: {x: 5.997066, y: 2.3031979, z: 2.3031979}
   m_Children:
   - {fileID: 1453025548}
   - {fileID: 55986913}
@@ -618,7 +618,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 513, y: -446}
+  m_AnchoredPosition: {x: 306, y: -260.51}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1317646458
@@ -785,7 +785,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: skip to next day
+  m_Text: 'Go to supermarket
+
+'
 --- !u!222 &1453025550
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -846,7 +848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.3207547, b: 0.032820065, a: 0.392}
+  m_Color: {r: 0.9811321, g: 0.6340687, b: 0.0786757, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -885,10 +887,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2080681330}
   lines:
-  - YOU " Its hard but simple working as a garbage man but it irratates me how society
-    cant control litter. I never realised how bad putting recycling in the wrong
-    bin was. "
-  - YOU"  Yh i will help you whenever"
+  - keys open doors, an enemy chases you and lightened object can be dragged
   textSpeed: 0
 --- !u!1 &1953788192
 GameObject:
