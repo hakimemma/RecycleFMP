@@ -95,17 +95,17 @@ public class Keybad : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-               if (textObvj.text == answer)
-        {
-            correct.Play();
-            textObvj.text = "Right";
-            animate = true; // Set animate to true when the code is correct
-        }
-        else
-        {
-            wrong.Play();
-            textObvj.text = "Wrong";
-        }
+            if (textObvj.text == answer)
+            {
+                correct.Play();
+                textObvj.text = "Right";
+                animate = true; // Set animate to true when the code is correct
+            }
+            else
+            {
+                wrong.Play();
+                textObvj.text = "Wrong";
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.C))
@@ -123,7 +123,7 @@ public class Keybad : MonoBehaviour
             Debug.Log("Work!");
         }
 
-          if (Input.GetKeyDown(KeyCode.L) && gameObject.activeInHierarchy)
+         if (Input.GetKeyDown(KeyCode.L) && gameObject.activeInHierarchy)
         { 
             Number(3); 
             Debug.Log("Work!");
