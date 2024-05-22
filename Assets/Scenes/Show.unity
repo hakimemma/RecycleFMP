@@ -653,8 +653,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2015927846}
         m_TargetAssemblyTypeName: NEWKEYPAD, Assembly-CSharp
-        m_MethodName: Keypad
-        m_Mode: 5
+        m_MethodName: Exit
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -908,7 +908,7 @@ GameObject:
   - component: {fileID: 229195248}
   - component: {fileID: 229195247}
   - component: {fileID: 229195246}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -4868,7 +4868,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1297918642}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: groundcheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5186,7 +5186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d5ab184d31f20a48acaf700f7dae9d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 5
   detectionRange: 10
   player: {fileID: 1840033130}
 --- !u!1 &1469065971
@@ -5975,8 +5975,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2015927846}
         m_TargetAssemblyTypeName: NEWKEYPAD, Assembly-CSharp
-        m_MethodName: Keypad
-        m_Mode: 5
+        m_MethodName: Enter
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6237,7 +6237,7 @@ GameObject:
   - component: {fileID: 1840033126}
   - component: {fileID: 1840033125}
   - component: {fileID: 1840033124}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -6260,6 +6260,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 1
+  feetPosition: {x: 0, y: -0.6, z: 0}
 --- !u!54 &1840033125
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6845,8 +6846,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2015927846}
         m_TargetAssemblyTypeName: NEWKEYPAD, Assembly-CSharp
-        m_MethodName: Keypad
-        m_Mode: 5
+        m_MethodName: Clear
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6993,7 +6994,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -7076,8 +7077,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7b45b75f0b2a1949bc4157e8346590e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correct: 
-  playerinput: 
+  correct: 123
+  destroy: {fileID: 4061999137894588935}
+  panel: {fileID: 435375494}
+  text: {fileID: 2091086466}
 --- !u!1 &2017988420
 GameObject:
   m_ObjectHideFlags: 0
@@ -9190,7 +9193,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!1 &4162965382382758767
 GameObject:

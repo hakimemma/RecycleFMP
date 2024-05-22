@@ -6,6 +6,7 @@ public class PlayerMovement1 : MonoBehaviour
     public LayerMask groundLayer;
     private Rigidbody rb;
     private bool isGrounded;
+    public Vector3 feetPosition;
 
     void Start()
     {
@@ -15,7 +16,7 @@ public class PlayerMovement1 : MonoBehaviour
     void Update()
     {
         // Check if the player is grounded using a SphereCast
-        isGrounded = Physics.CheckSphere(transform.position, 0.1f, groundLayer);
+        isGrounded = Physics.CheckSphere(transform.position + feetPosition, 0.1f, groundLayer);
 
         // Handle jump input
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
@@ -33,6 +34,6 @@ public class PlayerMovement1 : MonoBehaviour
     void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, 0.1f);
+        Gizmos.DrawWireSphere(transform.position + feetPosition, 0.1f);
     }
 }

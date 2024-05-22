@@ -5,6 +5,7 @@ public class EnemyAI : MonoBehaviour
     public float moveSpeed = 3f;
     public float detectionRange = 10f;
     public Transform player;
+    private Animator myAnim;
 
     Rigidbody rb;
     Vector3 moveDirection;
@@ -12,6 +13,8 @@ public class EnemyAI : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        myAnim = GetComponent<Animator>();
+
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
@@ -25,10 +28,12 @@ public class EnemyAI : MonoBehaviour
 
             // Move enemy towards player
             rb.MovePosition(transform.position + moveDirection * moveSpeed * Time.deltaTime);
+            myAnim.SetBool("moving", true);
         }
         else
         {
             Debug.Log("Player not detected.");
+            myAnim.SetBool("moving", false);
         }
     }
 }
