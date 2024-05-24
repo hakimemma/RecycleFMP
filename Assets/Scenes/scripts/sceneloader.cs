@@ -7,7 +7,7 @@ public class sceneloader : MonoBehaviour
     // Start is called before the first frame update
    public void retry()
     {
-        SceneManager.LoadScene("recycling plant");
+        SceneManager.LoadScene("Show");
     }
 
 }
